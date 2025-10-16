@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>my HNG Profile Card</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <article data-testid="test-profile-card">
+
+        <figure class="profile-picture">
+            <img 
+                src="./PFP.jpg" 
+                alt="A profile picture of myself" 
+                data-testid="test-user-avatar" 
+            >
+        </figure>
+
+        <div class="profile-info">
+            
+            <header>
+                <h2 data-testid="test-user-name">Ahmad Taiwo</h2>
+            </header>
+    
+            <p data-testid="test-user-bio">
+                As a passionate Front-End Developer from Nigeria, I love turning creative ideas into clean, responsive web applications using React, Next.js, and TypeScript. I thrive on blending great design with functionality. I've joined the HNG Internship to sharpen my problem-solving skills, contribute meaningfully to team projects, and push the boundaries of what I can build on the web.
+            </p>
+    
+            <section>
+                <p>Current Time (in ms): <span data-testid="test-user-time"></span></p>
+            </section>
+            
+            <nav data-testid="test-user-social-links">
+                <ul>
+                    <li>
+                        <a 
+                            href="https://github.com/Solataiwo-15"
+                            target="_blank" 
+                            rel="noopener noreferrer"
+                            data-testid="test-user-social-github"
+                        >
+                            <i class="fa-brands fa-github"></i> GitHub
+                        </a>
+                    </li>
+                    <li>
+                        <a 
+                            href="https://www.linkedin.com/in/ahmad-taiwo"
+                            target="_blank" 
+                            rel="noopener noreferrer"
+                            data-testid="test-user-social-linkedIn"
+                        >
+                            <i class="fa-brands fa-linkedin"></i> LinkedIn
+                        </a>
+                    </li>
+                    <li>
+                        <a 
+                            href="https://www.behance.net/ahmadtaiwo15"
+                            target="_blank" 
+                            rel="noopener noreferrer"
+                            data-testid="test-user-social-behance"
+                        >
+                            <i class="fa-brands fa-behance"></i> Behance
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+    
+            <section class="hobbies">
+                <h3>Hobbies</h3>
+                <ul data-testid="test-user-hobbies">
+                    <li>Solving Complex Problems</li>
+                    <li>Playing Football</li>
+                    <li>Exploring New Technologies</li>
+                    <li>Playing Video Games</li>
+                </ul>
+            </section>
+    
+            <section class="dislikes">
+                <h3>Dislikes</h3>
+                <ul data-testid="test-user-dislikes">
+                    <li>Vague Project Requirements</li>
+                    <li>Constant Interruptions</li>
+                    <li>Poor Communication</li>
+                    <li>Bugs in Production</li>
+                </ul>
+            </section>
+
+        </div>
+
+    </article>
+
+    <script src="script.js"></script>
+    
+</body>
+</html>

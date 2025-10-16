@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f0f2f5;
+    margin: 0;
+    padding: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+article[data-testid="test-profile-card"] {
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+img[data-testid="test-user-avatar"] {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.profile-avatar {
+    margin: 0;
+}
+
+.profile-info {
+    padding: 24px;
+}
+
+h2[data-testid="test-user-name"] {
+    margin-top: 0; 
+    margin-bottom: 8px;
+    font-size: 28px; 
+    color: #1c1e21; 
+}
+
+p[data-testid="test-user-bio"] {
+    font-size: 16px;
+    line-height: 1.5; 
+    color: #606770; 
+    margin-bottom: 20px;
+}
+
+.profile-info h3 {
+    margin-bottom: 8px;
+    font-size: 18px;
+    color: #1c1e21;
+    border-bottom: 1px solid #e0e0e0; 
+    padding-bottom: 4px;
+}
+
+.profile-info ul {
+    list-style: none; 
+    padding-left: 0;  
+    margin: 0 0 20px 0; 
+    color: #606770;
+}
+
+.profile-info li {
+    margin-bottom: 6px;
+}
+
+nav[data-testid="test-user-social-links"] {
+    margin-top: 24px;
+    margin-bottom: 24px;
+}
+
+nav[data-testid="test-user-social-links"] ul {
+    display: flex;
+    justify-content: center; 
+    gap: 12px; 
+}
+
+nav[data-testid="test-user-social-links"] a {
+    display: flex; 
+    align-items: center;
+    gap: 8px; 
+    
+    background-color: #f0f2f5; 
+    color: #333;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+    
+    padding: 10px 16px;
+    border-radius: 9999px;
+    
+    transition: all 0.2s ease-in-out;
+}
+
+nav[data-testid="test-user-social-links"] a i {
+    font-size: 18px; 
+}
+
+nav[data-testid="test-user-social-links"] a:hover,
+nav[data-testid="test-user-social-links"] a:focus {
+    background-color: #e4e6eb; 
+    transform: scale(1.05); 
+    color: #000;
+    outline: none;
+}
+
+@media (min-width: 600px) {
+    
+    article[data-testid="test-profile-card"] {
+        flex-direction: row;
+    }
+
+    .profile-picture {
+        flex: 0 0 300px;
+        border-radius: 12px;
+        overflow: hidden;
+    }
+
+    img[data-testid="test-user-avatar"] {
+        height: 100%;
+        object-fit: cover;
+    }
+}
