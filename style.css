@@ -24,8 +24,11 @@ article[data-testid="test-profile-card"] {
 
 img[data-testid="test-user-avatar"] {
     width: 100%;
+    max-height: 350px;
     height: auto;
+    border-radius: 10px;
     display: block;
+    object-fit: cover;
 }
 
 .profile-avatar {
@@ -78,6 +81,7 @@ nav[data-testid="test-user-social-links"] ul {
     display: flex;
     justify-content: center; 
     gap: 12px; 
+    flex-wrap: wrap;
 }
 
 nav[data-testid="test-user-social-links"] a {
@@ -117,7 +121,7 @@ nav[data-testid="test-user-social-links"] a:focus {
 
     .profile-picture {
         flex: 0 0 300px;
-        border-radius: 12px;
+        border-radius: 10px;
         overflow: hidden;
     }
 
