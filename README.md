@@ -22,18 +22,16 @@ This project is a solution to the Stage 0 task for the HNG Internship. It is a f
 
 ---
 
-###  How to Run Locally
+### How to Run Locally
 
 To run this project on your local machine, follow these steps:
 
 1.  **Clone the repository:**
     ```sh
-    git clone https://github.com/your-username/hng-profile-card.git
+    git clone https://github.com/Solataiwo-15/hng-profile-card.git
     ```
 2.  **Navigate into the directory:**
     ```sh
     cd hng-profile-card
     ```
 3.  **Open the `index.html` file** in your preferred web browser.
-
----
