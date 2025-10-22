@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me - Ahmad Taiwo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="main-header">
+        <nav class="main-nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Me</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="content-page-contact" data-testid="test-contact-page">
+        <h1>Contact Me</h1>
+        <p>Hi there, contact me to ask me about anything you have in mind.</p>
+
+        <form id="contact-form">
+            <div class="form-group">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" data-testid="test-contact-name" placeholder="Enter your full name" aria-describedby="error-name">
+                <div class="error-message" id="error-name" data-testid="test-contact-error-name"></div>
+            </div>
+            
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" data-testid="test-contact-email" placeholder="yourname@example.com" aria-describedby="error-email">
+                <div class="error-message" id="error-email" data-testid="test-contact-error-email"></div>
+            </div>
+
+            <div class="form-group">
+                <label for="subject">Subject</label>
+                <input type="text" id="subject" data-testid="test-contact-subject" placeholder="Enter the subject" aria-describedby="error-subject">
+                <div class="error-message" id="error-subject" data-testid="test-contact-error-subject"></div>
+            </div>
+
+            <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" data-testid="test-contact-message" placeholder="Send me a message and I'll reply you as soon as possible..." aria-describedby="error-message"></textarea>
+                <div class="error-message" id="error-message" data-testid="test-contact-error-message"></div>
+            </div>
+
+            <button type="submit" data-testid="test-contact-submit">Send Message</button>
+        </form>
+        
+        <div class="success-message" data-testid="test-contact-success"></div>
+
+    </main>
+    
+    <!-- We will create this JS file in a later step -->
+    <script src="contact.js"></script>
+</body>
+</html>
